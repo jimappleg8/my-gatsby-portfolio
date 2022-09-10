@@ -1,51 +1,25 @@
 import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import { 
-  container,
-  heading,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-  siteTitle
-} from './layout.module.css'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import MainNav from './nav'
+import Footer from './footer'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/style.scss'
 
-const Layout = ({ pageTitle, children }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+const Layout = ({ children }) => {
   return (
-    <div className={container}>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
-              Blog
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <main>
-        <h1 className={heading}>{pageTitle}</h1>
-        {children}
-      </main>
-    </div>
+    <Container className="main" id="top">
+      <MainNav />
+      <Container>
+        <Row>
+          <Col md={12}>
+            {children}
+          </Col>
+        </Row>
+      </Container>
+      <Footer />
+    </Container>
   );
 }
 
