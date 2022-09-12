@@ -1,19 +1,24 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 
 const BlogPost = ({ data, children }) => {
-  const image = getImage(data.mdx.frontmatter.featured_image)
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>{data.mdx.frontmatter.date}</p>
-      <GatsbyImage
-        image={image}
-        alt={data.mdx.frontmatter.featured_image_alt}
-      />
-      {children}
+      <div className="spacer"></div>
+      <Container>
+        <Row>
+          <Col md={1}></Col>
+          <Col md={10}>
+            {children}
+          </Col>
+          <Col md={1}></Col>
+        </Row>
+      </Container>
     </Layout>
   )
 }

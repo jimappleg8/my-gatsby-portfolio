@@ -9,6 +9,7 @@ const PortfolioImage = ({ node }) => {
     <GatsbyImage 
       image={image} 
       alt={node.frontmatter.title}
+      className="project-image"
     />
     </div>
   )

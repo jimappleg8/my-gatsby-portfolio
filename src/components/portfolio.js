@@ -23,7 +23,9 @@ const PortfolioList = () => {
             featured_image_alt
             featured_image {
               childImageSharp {
-                gatsbyImageData
+                gatsbyImageData (
+                  placeholder: BLURRED
+                )
               }
             }
           }
@@ -34,11 +36,12 @@ const PortfolioList = () => {
   `)
   
   return (
-    <main id="portfolio">
+    <main className='portfolio'>
       <Container>
         <Row>
           <Col md={12}>
-            <h2 className="section-title text-center">Portfolio</h2>
+            <div className="anchor" id="portfolio"></div>
+            <h2 className="section-title text-center">Some Things I've Built</h2>
             <div className="break"></div>
 
             {

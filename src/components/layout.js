@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import MainNav from './nav'
 import Footer from './footer'
+import "@fontsource/open-sans"
+import "@fontsource/merriweather"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/style.scss'
 

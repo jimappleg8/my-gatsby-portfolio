@@ -49,7 +49,7 @@ article {
 
 p {
   line-height: 1.8;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 a {
@@ -70,6 +70,7 @@ img {
   border: solid 1px #b3bcc1;
   border-radius: 4px;
   color: #2E4453;
+  font-size: 1.1em;
   font-weight: 600;
   &:hover, &.btn-default:hover {
     background-color: white;
@@ -236,9 +237,9 @@ img {
 }
 
 /*--------------------------------------------------------------
-	3.0 Posts
+	3.0 Portfolio List
 --------------------------------------------------------------*/
-#portfolio .container {
+main.portfolio .container {
   margin-top: 10em;
   @include bp-xsmall {
     margin-top: 2em;
@@ -287,6 +288,18 @@ div.anchor{
   visibility: hidden;
 }
 
+div.project-image {
+  @include bp-xsmall {
+    display: none;
+  }
+  @include bp-small {
+    display: none;
+  }
+  picture img {
+    border: 1px solid #CCC;
+  }
+}
+
 .content-wrap {
   margin-bottom: 8em;
   @include bp-xsmall {
@@ -294,15 +307,6 @@ div.anchor{
   }
   @include bp-small {
     margin-bottom: 2em;
-  }
-  picture img {
-    border: 1px solid #CCC;
-    @include bp-xsmall {
-      display: none;
-    }
-    @include bp-small {
-      display: none;
-    }
   }
   .content {
     margin-top: 1em;
@@ -312,7 +316,7 @@ div.anchor{
     }
     h3.title {
       position: relative;
-      margin-bottom: 1.5em;
+      margin-bottom: 1em;
       &:after {
         content: '';
         position: absolute;
@@ -323,32 +327,30 @@ div.anchor{
         background-color: #ECEFF1;
       }
     }
-    .excerpt {
+    p.excerpt {
       width: 100%;
       font-size: 100%;
+      margin-bottom: 0.5rem;
       @include bp-xsmall {
         width: 100%;
       }
     }
-    button{
+   a.btn {
       font-size: 16px;
       margin-left: 0;
       margin-bottom: 1em;
       margin-top: 1em;
     }
-    .tags, .categories {
-      margin: 1.5em 0;
+    div.tags {
+      margin: 1em 0;
       span {
-        color: #9eb1bd;
+        font-size: 0.9em;
+        color: #333;
         background-color: #ECEFF1;
-        padding: 0.5em 1.5em;
+        padding: 0.3em 1em;
         display: inline-block;
-        margin-bottom: 0.5em;
+        margin: 0 3px 0.5em 3px;
       }
-    }
-    .categories span {
-      color: #b9b1ad;
-      background-color: #EFEBE9;
     }
   }
 }
@@ -357,6 +359,11 @@ div.anchor{
 	3.1 Post Pages
 --------------------------------------------------------------*/
 
+div.spacer {
+  font-size: 0; 
+    height: 100px;
+    line-height: 0;
+}
 .carousel {
   margin: 2em 0;
 }

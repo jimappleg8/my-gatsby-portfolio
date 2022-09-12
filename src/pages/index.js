@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import PortfolioList from '../components/portfolio'
 import Seo from '../components/seo'
+import "@fontsource/open-sans"
+import "@fontsource/merriweather"
 
 const IndexPage = () => {
   return (
