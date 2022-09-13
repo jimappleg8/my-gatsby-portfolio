@@ -40,6 +40,7 @@ const Hero = () => {
 									<div className="hero-buttons">
 										<Button 
 											href="https://linkedin.com/in/jimappleg8"
+											target="_blank"
 											variant="default"
 											size="lg"
 										>
@@ -47,6 +48,7 @@ const Hero = () => {
 										</Button>
 										<Button 
 											href="https://github.com/jimappleg8"
+											target="_blank"
 											variant="default"
 											size="lg"
 										>
@@ -54,6 +56,7 @@ const Hero = () => {
 										</Button>
 										<Button 
 											href="https://www.jimapplegate.com/"
+											target="_blank"
 											variant="default"
 											size="lg"
 										>

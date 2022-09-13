@@ -34,5 +34,6 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     `remark`,
     `remark-html`,
+    `gatsby-plugin-netlify`,
   ],
 };

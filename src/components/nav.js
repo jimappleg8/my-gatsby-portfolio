@@ -7,9 +7,9 @@ function MainNav() {
   return (
       <Navbar bg="light" variant="light" fixed="top">
         <Container>
-          <Navbar.Brand href="#top">Jim Applegate</Navbar.Brand>
+          <Navbar.Brand href="/">Jim Applegate</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#top">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#portfolio">Portfolio</Nav.Link>
           </Nav>
         </Container>
