@@ -3,12 +3,18 @@ module.exports = {
     title: `Jim's Portfolio`,
     description: `A portfolio website for Jim Applegate`,
     twitterUsername: `@jimappleg8`,
-    image: `/gatsby-icon.png`,
+    image: `/ja-logo-icon.png`,
     siteUrl: `https://www.jimappleg8.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/ja-logo-icon.svg`,
+      }
+    },
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
