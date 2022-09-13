@@ -32,8 +32,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-fontawesome-css`,
-    {
-    resolve: 'gatsby-plugin-mdx-frontmatter'
-    },
+    `remark`,
+    `remark-html`,
   ],
 };

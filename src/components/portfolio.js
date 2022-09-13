@@ -47,7 +47,7 @@ const PortfolioList = () => {
             {
             data.allMdx.nodes.map((node, i) => (
               <div key={node.id} className="content-wrap">
-                <div className="anchor" id="{node.frontmatter.slug}"></div>
+                <div className="anchor" id={node.frontmatter.slug}></div>
                 {
                 (i % 2 === 0) 
                   ? <Row>
