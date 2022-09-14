@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-h1 {
+h1, h2.section-title {
   color: #dc7373
 }
 
@@ -208,7 +208,30 @@ img {
 
 
 /*--------------------------------------------------------------
-	2.1 Contact
+	2.1 About
+--------------------------------------------------------------*/
+main.about .container {
+  margin: 10em 0 7em 0;
+  @include bp-xsmall {
+    margin-top: 2em 0 2em 0;
+  }
+  .break {
+    margin: 6em 0;
+    @include bp-xsmall {
+      margin: 2em 0;
+    }
+  }
+}
+
+.about-photo {
+  border: 2px solid #999;
+  border-radius: 10px;
+}
+
+
+
+/*--------------------------------------------------------------
+	2.2 Contact
 --------------------------------------------------------------*/
 .modal-header {
   border-bottom: none;

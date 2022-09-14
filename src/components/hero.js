@@ -68,7 +68,7 @@ const Hero = () => {
 						</div>
 					</div>
 
-				<a className="section-jump text-center" href="#portfolio"><FontAwesomeIcon icon={faAngleDown} size="3x" aria-label="Down Arrow" /></a>
+				<a className="section-jump text-center" href="#about"><FontAwesomeIcon icon={faAngleDown} size="3x" aria-label="Down Arrow" /></a>
 			</div>
 		);
 }

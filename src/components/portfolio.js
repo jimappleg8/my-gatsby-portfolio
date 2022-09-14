@@ -52,20 +52,20 @@ const PortfolioList = () => {
                 (i % 2 === 0) 
                   ? <Row>
                       <Col md={1}></Col>
-                      <Col xs={10} md={6}>
+                      <Col xs={12} md={6}>
                         <PortfolioImage node={node} />
                       </Col>
-                      <Col xs={10} md={4}>
+                      <Col xs={12} md={4}>
                         <PortfolioContent node={node} />
                       </Col>
                       <Col md={1}></Col>
                     </Row>
                   : <Row>
                       <Col md={1}></Col>
-                      <Col xs={10} md={4}>
+                      <Col xs={12} md={4}>
                         <PortfolioContent node={node} />
                       </Col>
-                      <Col xs={10} md={6}>
+                      <Col xs={12} md={6}>
                         <PortfolioImage node={node} />
                       </Col>
                       <Col md={1}></Col>

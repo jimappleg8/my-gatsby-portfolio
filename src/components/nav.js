@@ -8,7 +8,7 @@ function MainNav() {
   return (
       <Navbar bg="light" variant="light" fixed="top" expand="sm">
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/#top">
             <img
               src="/favicon.svg"
               width="30"
@@ -21,14 +21,18 @@ function MainNav() {
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav>
               <Nav.Item>
-                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/#top">Home</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                <Nav.Link href="/#about">About</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="/#portfolio">Portfolio</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Button 
 									href="/resume/jim-applegate-resume.pdf"
+                  target="_blank"
 									variant="dark"
 									size="md"
                   className="resume-btn"

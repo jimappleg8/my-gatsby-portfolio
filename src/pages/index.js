@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
+import About from '../components/about'
 import PortfolioList from '../components/portfolio'
 import Seo from '../components/seo'
 import "@fontsource/open-sans"
@@ -10,6 +11,7 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
       <Hero />
+      <About />
       <PortfolioList />
     </Layout>
   )
