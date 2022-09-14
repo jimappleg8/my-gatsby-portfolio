@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `src/images/ja-logo-icon.svg`,
+        icon: `src/images/ja-logo-icon-red.svg`,
       }
     },
     {
