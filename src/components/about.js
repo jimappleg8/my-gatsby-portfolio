@@ -24,7 +24,7 @@ const About = () => {
           <Col md={1}></Col>
           <Col xs={12} md={6}>
             <p>I've been a web developer for 20+ years, and I love the constant challenge of learning new tools, techniques and technologies. I've had the opportunity to grow along with the web, learning a broad range of technologies up and down the stack.</p>
-            <p>As someone who has dealt with my share of big monolithic CMSs and their infrastructure needs, I'm especially excited about the JAMStack as an architecture. I hope and expect that these modern tools and techniques will define my career going forward.</p>
+            <p>As someone who has dealt with plenty of big monolithic CMSs and their infrastructure needs, I'm especially excited about the JAMStack as an architecture. I hope and expect that these modern tools and techniques will define my career going forward.</p>
             <p>Web development is more specialized now, and that's okay. I can do front-end or full-stack development or anything between. It's all about solving problems, and that's what I love to do.</p>
           </Col>
           <Col xs={10} md={4}>
