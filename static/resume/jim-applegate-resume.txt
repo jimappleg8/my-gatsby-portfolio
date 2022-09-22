@@ -14,8 +14,8 @@ QUALIFICATIONS
 Over 20 years of experience in all kinds of web technologies, including:
 • Stacks: LAMP for much of my career, focused now on JAMStack
 • Programming Languages: HTML 5, JavaScript (ES6), CSS/Sass, PHP
-• Back-end Frameworks: Wordpress, Drupal, CodeIgniter, Laravel
-• Libraries & Frameworks: jQuery, Jekyll, Bootstrap
+• Back-end Frameworks: Wordpress, Drupal, CodeIgniter, Laravel, Node, Express
+• Libraries & Frameworks: jQuery, Jekyll, Bootstrap, React, Gatsby
 • Tools and Platforms: Github, Ansible, AWS, Google Cloud, Digital Ocean, Google Analytics, Google Tag Manager, Google Search Console, Various APIs
 • Design: Illustrator, Photoshop, Sketch
 • Best Practices: Responsive & Mobile-first design, Semantic Markup, MVC pattern, JAMstack, Accessibility
